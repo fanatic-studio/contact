@@ -1,12 +1,12 @@
-package vd.android.vdContact.module;
+package eco.android.ecoContact.module;
 
 import com.taobao.weex.annotation.JSMethod;
 import com.taobao.weex.bridge.JSCallback;
 
-import app.vd.framework.extend.base.WXModuleBase;
-import vd.android.vdContact.module.utils.ContactUtils;
+import app.eco.framework.extend.base.WXModuleBase;
+import eco.android.ecoContact.module.utils.ContactUtils;
 
-public class vdContactAppModule extends WXModuleBase {
+public class ecoContactAppModule extends WXModuleBase {
 
     /**
      * 获取联系人列表

@@ -3,19 +3,19 @@
 ## 安装
 
 ```shell script
-vd plugin install https://github.com/ivde/contact
+eco plugin install https://github.com/kjeco/contact
 ```
 
 ## 卸载
 
 ```shell script
-vd plugin uninstall https://github.com/ivde/contact
+eco plugin uninstall https://github.com/kjeco/contact
 ```
 
 ## 引用
 
 ```js
-const contact = app.requireModule("vd/contact");
+const contact = app.requireModule("eco/contact");
 ```
 
 ## 获取联系人列表 (未分组)

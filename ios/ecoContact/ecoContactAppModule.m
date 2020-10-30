@@ -1,22 +1,22 @@
 //
-//  vdContactAppModule.m
+//  ecoContactAppModule.m
 //  Pods
 //
 
-#import "vdContactAppModule.h"
+#import "ecoContactAppModule.h"
 #import <WeexPluginLoader/WeexPluginLoader.h>
 #import "LJContactManager.h"
 #import "LJPerson.h"
 
-@interface vdContactAppModule ()
+@interface ecoContactAppModule ()
 
 @end
 
-@implementation vdContactAppModule
+@implementation ecoContactAppModule
 
 @synthesize weexInstance;
 
-WX_PlUGIN_EXPORT_MODULE(vdContact, vdContactAppModule)
+WX_PlUGIN_EXPORT_MODULE(ecoContact, ecoContactAppModule)
 WX_EXPORT_METHOD(@selector(lists:))
 WX_EXPORT_METHOD(@selector(section:))
 

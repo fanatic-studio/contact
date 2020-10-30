@@ -4,25 +4,25 @@ Pod::Spec.new do |s|
 
 
 
-  s.name         = "vdContact"
+  s.name         = "ecoContact"
   s.version      = "1.0.0"
-  s.summary      = "vd plugin."
+  s.summary      = "eco plugin."
   s.description  = <<-DESC
-                    vd plugin.
+                    eco plugin.
                    DESC
 
-  s.homepage     = "https://vd.app"
+  s.homepage     = "https://eco.app"
   s.license      = "MIT"
-  s.author             = { "ViewDesign" => "viewdesign@gmail.com" }
+  s.author             = { "kjeco" => "kjeco@kjeco.com" }
   s.source =  { :path => '.' }
-  s.source_files  = "vdContact", "**/**/*.{h,m,mm,c}"
+  s.source_files  = "ecoContact", "**/**/*.{h,m,mm,c}"
   s.exclude_files = "Source/Exclude"
-  s.resources = 'vdContact/resources/*.*'
+  s.resources = 'ecoContact/resources/*.*'
   s.platform     = :ios, "8.0"
   s.requires_arc = true
 
   s.dependency 'WeexSDK'
-  s.dependency 'vd'
+  s.dependency 'eco'
   s.dependency 'WeexPluginLoader', '~> 0.0.1.9.1'
 
 end

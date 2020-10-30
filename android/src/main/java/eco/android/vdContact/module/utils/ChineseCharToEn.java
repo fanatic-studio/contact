@@ -1,4 +1,4 @@
-package vd.android.vdContact.module.utils;
+package eco.android.ecoContact.module.utils;
 
 import java.io.UnsupportedEncodingException;
 

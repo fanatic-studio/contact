@@ -1,4 +1,4 @@
-package vd.android.vdContact.module.utils;
+package eco.android.ecoContact.module.utils;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -22,10 +22,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import app.vd.framework.extend.integration.xutils.common.util.FileUtil;
-import app.vd.framework.extend.module.vdCommon;
-import app.vd.framework.extend.module.vdJson;
-import app.vd.framework.extend.module.utilcode.util.PermissionUtils;
+import app.eco.framework.extend.integration.xutils.common.util.FileUtil;
+import app.eco.framework.extend.module.ecoCommon;
+import app.eco.framework.extend.module.ecoJson;
+import app.eco.framework.extend.module.utilcode.util.PermissionUtils;
 
 public class ContactUtils {
 
@@ -95,7 +95,7 @@ public class ContactUtils {
         Map<String, JSONArray> array = new HashMap<>();
         for (int i = 0; i < contacts.size(); i++) {
             JSONObject item = contacts.getJSONObject(i);
-            String py = ChineseCharToEn.getInstance().getFirstLetter(vdJson.getString(item, "name")).toUpperCase();
+            String py = ChineseCharToEn.getInstance().getFirstLetter(ecoJson.getString(item, "name")).toUpperCase();
             JSONArray tmp = array.get(py);
             if (tmp == null) {
                 tmp = new JSONArray();
@@ -147,7 +147,7 @@ public class ContactUtils {
             temp.put("phones", phones);
             //获取联系人头像
             Bitmap photo = getContactPhoto(context, contactId);
-            temp.put("photo", photo == null ? "" : imageToGallery(photo, vdCommon.md5(temp.getString("name")), photoDir));
+            temp.put("photo", photo == null ? "" : imageToGallery(photo, ecoCommon.md5(temp.getString("name")), photoDir));
             //
             lists.add(temp);
         }

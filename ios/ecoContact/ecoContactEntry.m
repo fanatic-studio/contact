@@ -1,13 +1,13 @@
 //
-//  vdContactEntry.m
+//  ecoContactEntry.m
 //  Pods
 //
 
-#import "vdContactEntry.h"
+#import "ecoContactEntry.h"
 #import "WeexInitManager.h"
 
-WEEX_PLUGIN_INIT(vdContactEntry)
-@implementation vdContactEntry
+WEEX_PLUGIN_INIT(ecoContactEntry)
+@implementation ecoContactEntry
 
 //启动成功
 - (void) didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
